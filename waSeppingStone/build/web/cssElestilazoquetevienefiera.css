@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-nov-2019, 10:42:26
+    Author     : volal
+*/
+
+@font-face{
+    font-family: CreamPeach;
+    src: url("Fonts/Cream Peach.ttf");
+}
+
+@font-face{
+    font-family: GoldenHills;
+    src: url(Fonts/GoldenHillsDEMO.ttf);
+}
+
+@font-face{
+    font-family: Quantify;
+    src: url("Fonts/Quantify.ttf");
+}
+
+@font-face{
+    font-family: SilentAsia;
+    src: url("Fonts/Silent Asia - Personal Use.otf");
+}
+
+
+body{
+    background: #222;
+    font-family: Tw Cen MT;
+}
+
+h1{
+    font-family: GoldenHills;
+    justify-content: center;
+    font-size: 60pt;
+    padding: 30px;
+    background: #730000;
+    text-shadow: 0 3px #000;;
+    color: #fff;
+    box-shadow: 0 2px #121212;
+    animation: introTitle;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+h2{
+    font-family: GoldenHills;
+    justify-content: center;
+    font-size: 40pt;
+    padding: 20px;
+    background: #730000;
+    text-shadow: 0 3px #000;;
+    color: #fff;
+    box-shadow: 0 2px #121212;
+}
+
+p{
+    color: #fff;
+    font-size: 25pt;
+    text-align: center;
+    font-family: GoldenHills;
+}
+
+.datos table{
+    padding: 15px 30px;
+    background: rgba(100,100,100,.1);
+    border-top: groove 2pt #777;
+    border-left: groove 2pt #777;
+    border-right: groove 3pt #151515;
+    border-bottom: groove 3pt #010101;
+    animation: introTable;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier;
+}
+
+.datos table tr td{
+    padding: 0 20px 0 20px;
+    height: 70px;
+    color: #fff;
+    text-shadow: 0 2px #121212;
+    font-family: GoldenHills;
+    font-size: 20pt;
+    text-align: right;
+}
+
+/*.datos table tr td*/ button[type="submit"]{
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    margin: 15px;
+    box-shadow: 0 2px #121212;
+    font-family: GoldenHills;
+    background: #720000;
+    font-size: 20pt;
+    min-width: 50px;
+    width: 50%;
+    height: 40px;
+}
+
+.datos table tr td input[type="text"]{
+    height: 40px;
+    width: 80px;
+    padding: 0 0 0 10px;
+    font-family: Tw Cen MT;
+    font-size: 23pt;
+    border: none;
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 1px #fff;
+}
+
+/*.datos table tr td */
+button[type="submit"]:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px #121212;
+    cursor: pointer;
+    background: #fff;
+    color: #720000;
+}
+
+td{
+    justify-content: center;
+    text-align: center;
+}
+
+.petros form table tr td table tr td{
+    
+}
+
+.petros form table tr td table tr td input[type="text"]{
+    
+}
+
+.petros, h1, h2{
+    min-width: 400px;
+}
+
+.datos{
+    min-width: 300px;
+}
+
+input[type="text"]{
+    text-align: center;
+}
+
+.S tr td input[type="text"]{
+    width: 85%;
+    line-height: 13px;
+    border-top: groove 2px #aaa;
+    border-bottom: groove 2px #0f0f0f;
+    border-left: groove 2px #888;
+    border-right: groove 2px #151515;
+    background: #bbb;
+    color: #151515;
+    text-shadow: .4pt .4pt #fff;
+    text-align: center;
+}
+
+.W tr td input[type="text"]{
+    width: 100%;
+    border-radius: 5px;
+    border: groove 1px #6ecaff;
+    background: rgba(148, 237, 255, .15);
+    color: #0bf;
+    text-align: center;
+    box-shadow: 1px 1px #111;
+}
+
+.tot{
+    background: transparent;
+}
+
+.tot input[type="text"]{
+    background: rgba(93, 93, 93, 0.5);
+    font-size: 20px;
+    padding: 10px 0;
+    border: none;
+    width: 100%;
+    color: #fff;
+}
+
+.default tr td input[type="text"]{
+    
+}
+
+.cf{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cf div{
+    float: left;
+    color: #fff;
+    padding: 10px;
+    border-left: groove 1px #777;
+    display: block;
+}
+
+@keyframes introTitle{
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes introTable{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
